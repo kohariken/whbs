@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.H.B.S</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .about-content img {
+            max-width: 50%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .about-content img:hover,
+        .about-content img:active {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img:hover,
+        .gallery-item img:active {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-number {
+            display: inline-block;
+            text-decoration: none;
+            background: #25d366;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.6s;
+        }
+
+        .contact-number:hover,
+        .contact-number:active {
+            background: #1d9b6c;
+        }
+
+        @media (max-width: 576px) {
+            .about-content img {
+                max-width: 65%;
+            }
+
+            .contact-number {
+                background: #25d366;
+                color: #fff;
+            }
+
+            .contact-number:hover,
+            .contact-number:active {
+                background: #1d9b6c;
+            }
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .about-content,
+        .gallery {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Div para a imagem de fundo desfocada -->
+
+    <header>
+        <div class="logo-container">
+            <img src="imagens/logo hwbs.PNG" alt="Logo" class="logo">
+            <h1>W.H.B.S.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about-me">Sobre Nós</a></li>
+                <li><a href="#portfolio">Clientes</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-me" class="center-text">
+        <h2>Sobre Nós <i class="fas fa-info-circle"></i></h2>
+        <div class="about-content">
+            <p><strong>Líderes em Recuperação de Crédito: Transformando Seu Futuro Financeiro!</strong> <i class="fas fa-chart-line"></i></p>
+            <p>Somos especialistas em limpar seu nome e abrir as portas para um futuro financeiro brilhante. Com anos de experiência e uma equipe dedicada, lideramos o mercado oferecendo soluções eficazes e personalizadas para restaurar sua reputação creditícia. Confie na nossa liderança e expertise para transformar sua vida financeira.</p>
+            <img src="imagens/Recuperacao-Credito_3.jpeg" alt="Recuperação de Crédito">
+
+            <h3>Nosso Valor <i class="fas fa-hand-holding-usd"></i></h3>
+            <p><strong>Transforme o Estresse em Alívio: Confie na Nossa Expertise!</strong> <i class="fas fa-smile-beam"></i></p>
+            <p>Esqueça o estresse causado pelo nome sujo no Serasa e outros órgãos de proteção ao crédito. Nossa equipe altamente qualificada utiliza uma abordagem estratégica e conhecimento profundo para eliminar suas pendências financeiras. Valorizamos cada cliente e trabalhamos incansavelmente para garantir que você experimente o alívio imediato e a paz de espírito que merece.</p>
+            <img src="imagens/alivio financeiro.avif" alt="Alívio Financeiro">
+
+            <h3>Como Trabalhamos <i class="fas fa-cogs"></i></h3>
+            <p><strong>Abordagem Estratégica e Personalizada: Restaurando Sua Reputação Creditícia!</strong> <i class="fas fa-user-shield"></i></p>
+            <p>Oferecemos soluções personalizadas que eliminam suas pendências e restauram sua reputação creditícia. Analisamos cada caso individualmente e desenvolvemos um plano de ação sob medida para suas necessidades específicas. Nossa dedicação e atenção aos detalhes garantem resultados excepcionais e duradouros.</p>
+            <img src="imagens/planejamento-financeiro.jpg" alt="Estratégia Personalizada">
+
+            <h3>Junte-se aos Milhares de Clientes Satisfeitos <i class="fas fa-users"></i></h3>
+            <p><strong>Redescubra a Tranquilidade Financeira com os Líderes do Mercado! 💼🤝</strong> <i class="fas fa-handshake"></i></p>
+            <p>Não perca mais tempo sofrendo com as consequências de um nome sujo. Junte-se aos milhares de clientes satisfeitos que já experimentaram a transformação financeira proporcionada pelos nossos serviços. Redescubra a tranquilidade financeira e abra as portas para novas oportunidades. Entre em contato conosco hoje mesmo e dê o primeiro passo para um futuro mais próspero e seguro!</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Clientes<i class="fas fa-briefcase"></i></h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="imagens/whbs 1.jpg" alt="Trabalho 1">
+                <p>Aumento de score imediato.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 2.jpg" alt="Trabalho 2">
+                <p>Clientes satisfeitos.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 3.jpg" alt="Trabalho 3">
+                <p>Confiaça gerada por merito.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 4.jpg" alt="Trabalho 4">
+                <p>Credibilidae no mercado.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 5.jpg" alt="Trabalho 5">
+                <p>Mais de 50 clientes mensais.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 6.jpg" alt="Trabalho 6">
+                <p>Reabilitamos o credito devedor.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/whbs 7.jpg" alt="Trabalho 7">
+                <p>Diverdos clientes satisfeitos.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/wbhs 8.jpg" alt="Trabalho 8">
+                <p>Sempre entregando o melhor resuiltado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato <i class="fas fa-envelope"></i></h2>
+        <p>Entre em contato comigo pelo número abaixo:</p>
+        <p><a href="http://wa.me/5531992235336" target="_blank" class="contact-number">
+            <i class="fab fa-whatsapp"></i> 
+            <span>(31) 99223-5336</span>
+        </a></p>
+    </section>
+    <footer>
+        <p>&copy; W.H.B.S. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Simula hover em dispositivos touch
+        document.addEventListener('touchstart', function(event) {
+            var target = event.target;
+            if (target.classList.contains('gallery-item')) {
+                target.classList.add('hover');
+            }
+        }, false);
+
+        document.addEventListener('touchend', function(event) {
+            var target = event.target;
+            if (target.classList.contains('gallery-item')) {
+                target.classList.remove('hover');
+            }
+        }, false);
+    </script>
+</body>
+</html>
